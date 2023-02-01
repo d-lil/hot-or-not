@@ -6,50 +6,57 @@
     <link rel="stylesheet" href="./assets/style.css">
     <title>Hot or Not</title>   
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
   </head>
-    <section class="bgimage">
+  <div class="bg">
+     <section class="bgi">
         <div class="container-fluid">
             <div class="row">
-                <h1 class="offset-lg-6 text-white">Catchy Weather Header</h1>
+                <h1 class="offset-lg-6 text-light fw-bold">Weather🧙‍♂️Wizard</h1>
             </div>
             </section>
         <div class="row m-2">
             <div class="col-lg-2 d-grid gap-2">
-                <h3>Search for a City:</h3>
-                <input type="text" class="form-control border-3" id="city" placeholder="Pee Pee Township">
-                <button type="button" class="btn btn-primary w-100" id="searchBtn">Search</button>
+                <h3 class="fw-bold">Search for a City:</h3>
+                <input type="text" class="form-control" id="city" placeholder="Pee Pee Township">
+                <button type="button" class="btn btn-dark w-100 border-4" id="searchBtn">Search</button>
                 <hr />
-                <div class="btn-group-vertical" style="width: 100%";>
-                    <button type="button" class="btn btn-info" id="atl">Atlanta</button>
-                    <button type="button" class="btn btn-info" id="aus">Austin</button>
-                    <button type="button" class="btn btn-info" id="chi">Chicago</button>
-                    <button type="button" class="btn btn-info" id="den">Denver</button>
-                    <button type="button" class="btn btn-info" id="la">Los Angeles</button>
-                    <button type="button" class="btn btn-info" id="nyc">New York</button>
-                    <button type="button" class="btn btn-info" id="orl">Orlando</button>
-                    <button type="button" class="btn btn-info" id="sea">Seattle</button>
+                <div class="btn-group-vertical pb-4" style="width: 100%";>
+                    <button type="button" class="btn btn-info btn-dark" id="atl">Atlanta</button>
+                    <button type="button" class="btn btn-info btn-dark" id="aus">Austin</button>
+                    <button type="button" class="btn btn-info btn-dark" id="chi">Chicago</button>
+                    <button type="button" class="btn btn-info btn-dark" id="den">Denver</button>
+                    <button type="button" class="btn btn-info btn-dark" id="la">Los Angeles</button>
+                    <button type="button" class="btn btn-info btn-dark" id="nyc">New York</button>
+                    <button type="button" class="btn btn-info btn-dark" id="orl">Orlando</button>
+                    <button type="button" class="btn btn-info btn-dark" id="sea">Seattle</button>
                 </div>
             </div>
             <div class="col-lg-10">
-                <div class="border border-dark">
-                <p>BLAHBLAHBLAHBLAKBHLKDB:SLKJF:SDLKFJ:SDLKFJ:SDLKFJS:DLFKJSD:FLKSDJF:LKSDJ:FL</p>
+                <div class="border border-dark card bg-light opacity-50 fw-bold text-dark">
+                <h4 id="today"></h4><div id="mainI"></div>
+                <p>Temp: <span id="mainT"></span> ℉</p>
+                <p>Wind: <span id="mainW"></span> MPH</p>
+                <p>Humidity: <span id="mainH"></span> %</p>
                 </div>
-                <h3>5-Day Forecast:</h3>
-                <div class="row">
-                    <div class="col-lg-2" id="test">
-                        <p>Blah</p>
+                <h3 class="fw-bold">5-Day Forecast:</h3>
+                <div class="row gap-2">
+                    <div class="card bg-dark col-lg-2 opacity-50 fw-bold" id="test">
+                        <p id="dt1"></p>
                     </div>
-                    <div class="col-lg-2">
-                        <p>Blah</p>
+                    <div class="card bg-dark col-lg-2 opacity-50 fw-bold">
+                        <p id="dt2"></p>
                     </div>
-                    <div class="col-lg-2">
-                        <p>Blah</p>
+                    <div class="card bg-dark col-lg-2 opacity-50 fw-bold">
+                        <p id="dt3"></p>
                     </div>
-                    <div class="col-lg-2">
-                        <p>Blah</p>
+                    <div class="card bg-dark col-lg-2 opacity-50 fw-bold">
+                        <p id="dt4"></p>
                     </div>
-                    <div class="col-lg-2">
-                        <p>Blah</p>
+                    <div class="card bg-dark col-lg-2 opacity-50 fw-bold">
+                        <p id="dt5"></p>
                     </div>
                 </div>
             </div>
@@ -57,8 +64,15 @@
 
 
 
-
     </div>
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+      integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
+      crossorigin="anonymous"
+    ></script>
     <script type="text/javascript" src="./assets/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    </div>
 </html>
