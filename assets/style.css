@@ -1,4 +1,21 @@
-.bgimage {
-    background: blueviolet;
+.bg {
+    background-image: url(./images/background.png);
+    background-size: 100%;
+    background-attachment: fixed;
+    min-height: 500px;
+    background-repeat: no-repeat;
+    color: white;
+
+}
+.bgi {   
+    background-image: url(./images/download.jpg);
     background-size: cover;
+}
+
+.btn {
+    border-color: yellow
+}
+
+h1 {
+    font-family: 'Righteous', cursive;
 }
