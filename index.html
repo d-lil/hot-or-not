@@ -19,44 +19,66 @@
             </section>
         <div class="row m-2">
             <div class="col-lg-2 d-grid gap-2">
+                <form id="cityForm">
                 <h3 class="fw-bold">Search for a City:</h3>
-                <input type="text" class="form-control" id="city" placeholder="Pee Pee Township">
-                <button type="button" class="btn btn-dark w-100 border-4" id="searchBtn">Search</button>
+                <input type="text" class="form-control" id="cityInput" placeholder="Pee Pee Township"/>
+                <input type="submit" onclick="onClick(this)" class="btn btn-dark w-100 border-4" id="searchBtn" value="Search"/>
+                </form>
                 <hr />
-                <div class="btn-group-vertical pb-4" style="width: 100%";>
-                    <button type="button" class="btn btn-info btn-dark" id="atl">Atlanta</button>
-                    <button type="button" class="btn btn-info btn-dark" id="aus">Austin</button>
-                    <button type="button" class="btn btn-info btn-dark" id="chi">Chicago</button>
-                    <button type="button" class="btn btn-info btn-dark" id="den">Denver</button>
-                    <button type="button" class="btn btn-info btn-dark" id="la">Los Angeles</button>
-                    <button type="button" class="btn btn-info btn-dark" id="nyc">New York</button>
-                    <button type="button" class="btn btn-info btn-dark" id="orl">Orlando</button>
-                    <button type="button" class="btn btn-info btn-dark" id="sea">Seattle</button>
+                <div class="cityButton btn-group-vertical pb-4" style="width: 100%";>
+                    <button type="button" onclick="onClick2(this)" class="btn btn-info btn-dark" value="atlanta">Atlanta</button>
+                    <button type="button" onclick="onClick2(this)" class="btn btn-info btn-dark" value="austin">Austin</button>
+                    <button type="button" onclick="onClick2(this)" class="btn btn-info btn-dark" value="chicago">Chicago</button>
+                    <button type="button" onclick="onClick2(this)" class="btn btn-info btn-dark" value="denver">Denver</button>
+                    <button type="button" onclick="onClick2(this)" class="btn btn-info btn-dark" value="los angeles">Los Angeles</button>
+                    <button type="button" onclick="onClick2(this)" class="btn btn-info btn-dark" value="new york">New York</button>
+                    <button type="button" onclick="onClick2(this)" class="btn btn-info btn-dark" value="orlando">Orlando</button>
+                    <button type="button" onclick="onClick2(this)" class="btn btn-info btn-dark" value="seattle">Seattle</button>
                 </div>
             </div>
             <div class="col-lg-10">
-                <div class="border border-dark card bg-light opacity-50 fw-bold text-dark">
-                <h4 id="today"></h4><div id="mainI"></div>
+                <div class="border border-dark card bg-light opacity-50 fw-bold text-dark" id="mD">
+                <h4 id="today"></h4><div class="bg-info" id="mainI"></div>
                 <p>Temp: <span id="mainT"></span> ℉</p>
                 <p>Wind: <span id="mainW"></span> MPH</p>
                 <p>Humidity: <span id="mainH"></span> %</p>
                 </div>
                 <h3 class="fw-bold">5-Day Forecast:</h3>
-                <div class="row gap-2">
+                <div class="row gap-2" id="fD">
                     <div class="card bg-dark col-lg-2 opacity-50 fw-bold" id="test">
                         <p id="dt1"></p>
+                        <div class="bg-info" id="oneI"></div>
+                        <p>Temp: <span id="oneT"></span> ℉</p>
+                        <p>Wind: <span id="oneW"></span> MPH</p>
+                        <p>Humidity: <span id="oneH"></span> %</p>
                     </div>
                     <div class="card bg-dark col-lg-2 opacity-50 fw-bold">
                         <p id="dt2"></p>
+                        <div class="bg-info" id="twoI"></div>
+                        <p>Temp: <span id="twoT"></span> ℉</p>
+                        <p>Wind: <span id="twoW"></span> MPH</p>
+                        <p>Humidity: <span id="twoH"></span> %</p>
                     </div>
                     <div class="card bg-dark col-lg-2 opacity-50 fw-bold">
                         <p id="dt3"></p>
+                        <div class="bg-info" id="threeI"></div>
+                        <p>Temp: <span id="threeT"></span> ℉</p>                        
+                        <p>Wind: <span id="threeW"></span> MPH</p>
+                        <p>Humidity: <span id="threeH"></span> %</p>
                     </div>
                     <div class="card bg-dark col-lg-2 opacity-50 fw-bold">
                         <p id="dt4"></p>
+                        <div class="bg-info" id="fourI"></div>
+                        <p>Temp: <span id="fourT"></span> ℉</p>
+                        <p>Wind: <span id="fourW"></span> MPH</p>
+                        <p>Humidity: <span id="fourH"></span> %</p>
                     </div>
                     <div class="card bg-dark col-lg-2 opacity-50 fw-bold">
                         <p id="dt5"></p>
+                        <div class="bg-info" id="fiveI"></div>
+                        <p>Temp: <span id="fiveT"></span> ℉</p>                        
+                        <p>Wind: <span id="fiveW"></span> MPH</p>
+                        <p>Humidity: <span id="fiveH"></span> %</p>
                     </div>
                 </div>
             </div>
